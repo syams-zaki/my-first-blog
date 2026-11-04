@@ -167,3 +167,36 @@ footer {
   color: var(--text-muted);
   font-size: 0.9rem;
 }
+
+/* Filter Buttons Row */
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  background: #ffffff;
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #ffe4e1;
+  color: var(--accent-pink);
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background: var(--accent-pink);
+  color: #ffffff;
+  border-color: var(--accent-pink);
+  box-shadow: 0 2px 8px rgba(224, 62, 84, 0.3);
+}

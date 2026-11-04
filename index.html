@@ -48,27 +48,42 @@
      <section class="main-column">
         <div class="posts-section">
             <h2 class="posts-section-title">📖 Recent Blog Posts</h2>
+
+            <!-- Category Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">✨ All</button>
+                <button class="filter-btn" data-category="daily-log">📝 Daily Log</button>
+                <button class="filter-btn" data-category="thoughts">💭 Thoughts</button>
+                <button class="filter-btn" data-category="music">🎵 Music</button>
+            </div>
+
+        <!-- Flashcards Container -->
         <div class="flashcard-grid">
         
-        <article class="flashcard">
-            <span class="badge">Daily Log 📝</span>
-            <h3><a href="posts/article_1.html">Starting My Cute Pink Blog!</a></h3>
-            <p class="date">Nov 4, 2026 • 1 min read</p>
-            <p class="preview-text">I finally styled my site in soft pinks and pastel tones!</p>
-            <a href="posts/article_1.html" class="read-link">Read Full Post ✨</a>
-        </article>
+            <!-- Card 1 -->
+            <article class="flashcard" data-category="daily-log">
+                <span class="badge">Daily Log 📝</span>
+                <h3><a href="posts/article_1.html">Starting My Cute Pink Blog!</a></h3>
+                <p class="date">Nov 4, 2026 • 1 min read</p>
+                <p class="preview-text">I finally styled my site in soft pinks and pastel tones!</p>
+                <a href="posts/article_1.html" class="read-link">Read Full Post ✨</a>
+            </article>
 
-        <article class="flashcard">
-            <span class="badge">Thoughts 💭</span>
-            <h3><a href="posts/article_2.html">Coding & Soft Aesthetics</a></h3>
-            <p class="date">Nov 3, 2026 • 2 min read</p>
-            <p class="preview-text">Building clean, aesthetic layouts makes coding so much fun...</p>
-            <a href="posts/article_2.html" class="read-link">Read Full Post ✨</a>
-        </article>
+            <!-- Card 2 -->
+            <article class="flashcard" data-category="thoughts">
+                <span class="badge">Thoughts 💭</span>
+                <h3><a href="posts/article_2.html">Coding & Soft Aesthetics</a></h3>
+                <p class="date">Nov 3, 2026 • 2 min read</p>
+                <p class="preview-text">Building clean, aesthetic layouts makes coding so much fun...</p>
+                <a href="posts/article_2.html" class="read-link">Read Full Post ✨</a>
+            </article>
 
         </div>
     </div>
     </section>
+
+    <!-- Include JavaScript at the bottom of body -->
+    <script src="script.js"></script>
 
 </main>
 
