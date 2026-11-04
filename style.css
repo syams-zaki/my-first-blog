@@ -171,32 +171,35 @@ footer {
 /* Filter Buttons Row */
 .filter-buttons {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
 
 .filter-btn {
-  background: #ffffff;
-  color: var(--text-dark);
-  border: 1px solid var(--border-color);
-  border-radius: 20px;
-  padding: 0.4rem 0.9rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  color: #4a3e43;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  padding: 0.45rem 1.1rem;
   font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .filter-btn:hover {
-  background: #ffe4e1;
-  color: var(--accent-pink);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.95);
+  color: #e03e54;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background: var(--accent-pink);
-  color: #ffffff;
-  border-color: var(--accent-pink);
-  box-shadow: 0 2px 8px rgba(224, 62, 84, 0.3);
+  background: #ffffff;
+  color: #e03e54;
+  font-weight: 700;
+  border-color: #e03e54;
+  box-shadow: 0 4px 14px rgba(224, 62, 84, 0.2);
 }
