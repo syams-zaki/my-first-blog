@@ -43,6 +43,18 @@ header p {
   margin-top: 0.5rem;
 }
 
+/* Lace Decal Divider */
+.lace-divider {
+  width: 100%;
+  height: 20px;
+  margin-top: -2rem; /* Pulls lace right up against the header bottom border */
+  margin-bottom: 2rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 40 20"><path d="M0,0 Q10,20 20,20 Q30,20 40,0 Z" fill="rgba(255, 255, 255, 0.95)" stroke="%23ffd1dc" stroke-width="2"/></svg>');
+  background-repeat: repeat-x;
+  background-position: top center;
+  filter: drop-shadow(0 4px 6px rgba(255, 182, 193, 0.3));
+}
+
 /* 2. Two-Column Layout Container */
 .page-layout {
   max-width: 1100px;
